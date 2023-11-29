@@ -13,8 +13,13 @@ RUN npm install
 # копируем все файлы в рабочую директорию
 COPY . .
 
+ENV IP_ADDRESS=127.0.0.1
+ENV PORT=8080
+
 # порт сервера
-EXPOSE 3000
+EXPOSE $PORT
 
 # запускаем серв
 CMD [ "node", "server.js" ]
+
+
