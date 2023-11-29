@@ -1,5 +1,5 @@
 # базовое изображение node.js
-FROM node:14
+FROM node:latest
 
 # устанавливаем дерикторию
 WORKDIR /usr/src/app
