@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const ipAddress = process.env.IP_ADDRESS || '127.0.0.1';
+const ipAddress = process.env.IP_ADDRESS || '0.0.0.0';
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname)));
 
