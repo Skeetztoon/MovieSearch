@@ -13,7 +13,7 @@ RUN npm install
 # копируем все файлы в рабочую директорию
 COPY . .
 
-ENV IP_ADDRESS=127.0.0.1
+ENV IP_ADDRESS=0.0.0.0
 ENV PORT=8080
 
 # порт сервера
